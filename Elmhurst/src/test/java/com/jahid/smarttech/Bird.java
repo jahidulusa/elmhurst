@@ -12,11 +12,15 @@ public class Bird {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.facebook.com/");
+		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
-		driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("jahidul.us@gmail.com");
-		driver.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("gcktdfclfou");
-		driver.findElement(By.xpath("//*[@id=\"u_0_2\"]")).click();
+		driver.findElement(By.name("txtUsername")).sendKeys("admin");
+		driver.findElement(By.name("txtPassword")).sendKeys("admin123");
+		driver.findElement(By.name("Submit")).click();
+		
+		//driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("jahidul.us@gmail.com");
+		//driver.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("gcktdfclfou");
+		//driver.findElement(By.xpath("//*[@id=\"u_0_2\"]")).click();
 		
 		
 	}
